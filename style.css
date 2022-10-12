@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   box-sizing: border-box; /*so padding and border doesnt effect the width and height of the element*/
 }
@@ -6,10 +6,68 @@
 body {
   font-family: "Roboto", sand-serif;
   margin: 0;
-  min-height: 100vh; /* we need to assign a height so the items knows where to center*/
+  min-height: 60vh; /* we need to assign a height so the items knows where to center*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /*so there are no scroll bars visible*/
+  background-color: #1e429f;
+}
+h1 {
+  color: yellow;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  font-size: 38px;
+  margin-top: 80px;
+}
+.search-bar {
+  width: 700px;
+  padding: 13px 17px;
+  border-radius: 8px;
+  border: none;
+  margin-top: -40px;
+}
+input::placeholder {
+  color: rgba(128, 128, 128, 0.628);
+}
+.search-bar:focus {
+  outline: none;
+}
+.my-pic {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  border: 3px solid yellow;
+}
+.card {
+  width: 800px;
+  height: 250px;
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-color: #b4c6fc;
+}
+.card-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul.follow {
+  border: 2px solid green;
+}
+ul li {
+  display: inline;
+}
+ul.follow li {
+  margin-right: 80px;
+}
+ul.repo-names li {
+  margin-right: 30px;
 }
