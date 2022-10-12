@@ -19,55 +19,81 @@ h1 {
   letter-spacing: 2px;
   font-size: 38px;
   margin-top: 80px;
+  text-align: center;
 }
 .search-bar {
   width: 700px;
   padding: 13px 17px;
   border-radius: 8px;
   border: none;
-  margin-top: -40px;
+  color: #1e429f;
 }
 input::placeholder {
-  color: rgba(128, 128, 128, 0.628);
+  color: #b4c6fc;
 }
 .search-bar:focus {
   outline: none;
+}
+.user-pic {
+  margin-top: -40px;
 }
 .my-pic {
   border-radius: 50%;
   width: 160px;
   height: 160px;
-  border: 3px solid yellow;
+  border: 3px solid #1e429f;
+  object-fit: cover;
 }
 .card {
-  width: 800px;
-  height: 250px;
+  width: 900px;
+  height: 300px;
   margin-top: 30px;
   background-color: white;
-  padding: 20px 30px;
-  border-radius: 5px;
+  padding: 10px 40px;
+  border-radius: 20px;
   background-color: #b4c6fc;
+  border: 3px solid white;
 }
 .card-inner {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  color: white;
+  gap: 30px;
+  color: #1e429f;
+}
+h4 {
+  font-size: 30px;
+  color: #1e429f;
+}
+p {
+  margin-top: -17px;
 }
 ul {
   list-style: none;
-  padding: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
 }
-ul.follow {
-  border: 2px solid green;
+p {
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 ul li {
   display: inline;
+  font-size: 18px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
 }
 ul.follow li {
   margin-right: 80px;
+  font-weight: bold;
+  color: rgb(249, 249, 31);
 }
+
 ul.repo-names li {
   margin-right: 30px;
+  background-color: #1e429f;
+  padding: 7px;
+  border-radius: 3px;
 }
