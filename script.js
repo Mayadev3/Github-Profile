@@ -14,6 +14,12 @@ form.addEventListener("submit", (e) => {
   const user = search.value;
   getUser(user);
 });
+
+async function getRepos(userName) {
+  const apiUrl = `https://api.github.com/users/${userName}/repos`;
+  const res = await axios(apiUrl);
+}
+
 function createUserCard(user) {
   const cardHTML = `<div class="card">
         <div class="card-inner">
