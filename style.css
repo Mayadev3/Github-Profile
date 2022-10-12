@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
 * {
   box-sizing: border-box; /*so padding and border doesnt effect the width and height of the element*/
 }
@@ -11,11 +11,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #1e429f;
 }
 h1 {
-  color: yellow;
-  font-family: "Bebas Neue", cursive;
+  color: black;
+  font-family: "Silkscreen", cursive;
   letter-spacing: 2px;
   font-size: 38px;
   margin-top: 80px;
@@ -27,10 +26,11 @@ h1 {
   padding: 13px 17px;
   border-radius: 8px;
   border: none;
-  color: #1e429f;
+  background-color: #c8c8c7;
+  border: 3px solid rgb(255, 174, 0);
 }
 input::placeholder {
-  color: #b4c6fc;
+  font-weight: bold;
 }
 .search-bar:focus {
   outline: none;
@@ -42,32 +42,30 @@ input::placeholder {
   border-radius: 50%;
   width: 160px;
   height: 160px;
-  border: 3px solid #1e429f;
+  border: 3px solid white;
   object-fit: cover;
 }
 .card {
   width: 900px;
   height: 300px;
   margin-top: 30px;
-  background-color: white;
+  background-color: #1c1c1c;
   padding: 10px 40px;
   border-radius: 20px;
-  background-color: #b4c6fc;
-  border: 3px solid white;
 }
 .card-inner {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  color: #1e429f;
 }
 h4 {
   font-size: 30px;
-  color: #1e429f;
+  color: white;
 }
 p {
   margin-top: -17px;
+  color: rgb(255, 174, 0);
 }
 ul {
   list-style: none;
@@ -89,12 +87,12 @@ ul li a {
 ul.follow li {
   margin-right: 80px;
   font-weight: bold;
-  color: rgb(249, 249, 31);
+  color: white;
 }
 
 ul.repo-names li {
   margin-right: 30px;
-  background-color: #1e429f;
+  background-color: rgb(255, 174, 0);
   padding: 7px;
   border-radius: 3px;
 }
