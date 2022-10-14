@@ -15,10 +15,12 @@ form.addEventListener("submit", (e) => {
   getUser(user);
 });
 
-async function getRepos(userName) {
-  const apiUrl = `https://api.github.com/users/${userName}/repos`;
-  const res = await axios(apiUrl);
+async function getRepos(username) {
+  const get = await fetch(`https://api.github.com/users/${username}/repos`);
+  const res = await get.json();
+  console.log(res);
 }
+getRepos("mayadev3");
 
 function createUserCard(user) {
   const cardHTML = `<div class="card">
