@@ -21,7 +21,6 @@ async function getRepos(username) {
     `https://api.github.com/users/${username}/repos?sort=created`
   );
   const res = await get.json();
-  console.log(res);
   addReposToCard(res);
 }
 
@@ -36,8 +35,9 @@ function addReposToCard(repos) {
     reposEl.appendChild(repoEl);
   });
 }
+
 function createUserCard(user) {
-  const cardHTML = `<div class="card">
+  const cardEl = `<div class="card">
         <div class="card-inner">
           <div class="user-pic">
             <img src="${user.avatar_url}" alt="${user.name}" class="my-pic" />
@@ -56,23 +56,5 @@ function createUserCard(user) {
           </div>
         </div>
       </div>`;
-  main.innerHTML = cardHTML;
+  main.innerHTML = cardEl;
 }
-
-/*<ul class="repo-names">
-    <a href="#" class="repos">
-      dictionary
-    </a>
-    <a href="#" class="repos">
-      weather
-    </a>
-    <a href="#" class="repos">
-      breaking bad
-    </a>
-    <a href="#" class="repos">
-      pokedex
-    </a>
-    <a href="#" class="repos">
-      todo list
-    </a>
-</ul>;*/
