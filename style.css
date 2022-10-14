@@ -52,8 +52,8 @@ input::placeholder {
   object-fit: cover;
 }
 .card {
-  width: 900px;
-  height: 300px;
+  width: 930px;
+  height: 330px;
   margin-top: 30px;
   background-color: #1c1c1c;
   padding: 10px 40px;
@@ -83,25 +83,30 @@ p {
   margin-bottom: 30px;
   font-size: 20px;
 }
-ul li {
-  display: inline;
-  font-size: 18px;
-}
-ul li a {
+
+#repos a {
   text-decoration: none;
-  color: white;
-}
-ul.follow li {
-  margin-right: 40px;
-  font-weight: bold;
-  color: white;
+  color: #fff;
+  background-color: rgb(255, 174, 0);
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 15px;
 }
 
-ul.repo-names li {
-  margin-right: 30px;
-  background-color: rgb(255, 174, 0);
-  padding: 7px;
-  border-radius: 3px;
+ul.follow {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+ul.follow li {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  color: white;
 }
 
 @media (max-width: 767px) {
@@ -140,29 +145,13 @@ ul.repo-names li {
     text-align: center;
     margin: 0 auto;
   }
-  ul.repo-names {
-    display: flex;
-    flex-direction: column;
-  }
-  ul.repo-names li {
-    margin: 3px auto;
-  }
-  ul.repo-names li a {
-    display: inline-block;
+  #repos {
+    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 912px) {
   .card {
     width: 730px;
-    height: 320px;
-  }
-  ul.repo-names {
-    display: flex;
-  }
-  ul.repo-names li {
-    margin: 3px auto;
-  }
-  ul.repo-names li a {
-    display: inline-block;
+    height: 350px;
   }
 }
