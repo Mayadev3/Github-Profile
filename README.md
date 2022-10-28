@@ -6,7 +6,7 @@ the names of the five most recent repositiories created. In addition, when a use
 
 Coding Achievements:
 
-- used async/await/fetch to get data from Github's API
+- used async/await/fetch to get data from the Github API
 
 - created the card element in javascript
 
@@ -17,4 +17,8 @@ Coding Achievements:
 
 Demo Link: https://wonderful-tarsier-673e7e.netlify.app/
 
+
+
+
+https://user-images.githubusercontent.com/107764065/198699012-159dcae4-ac3d-4dbf-b17f-587275631f89.mp4
 
